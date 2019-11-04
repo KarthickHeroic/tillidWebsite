@@ -1,0 +1,231 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Source+Sans+Pro:300,400,600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.layout {
+  table-layout: inherit; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 14px; }
+
+.logo {
+  background-image: url("../images/tillid.svg");
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  z-index: 2; }
+
+/* CSS Document */
+.bodybg {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/bg.svg");
+  z-index: 1000;
+  position: fixed; }
+
+section {
+  background-size: contain;
+  height: 100%;
+  width: 100%; }
+
+#home {
+  background-color: #d2e0e5; }
+
+#technologies {
+  background-color: #1391BE; }
+
+#whoweare {
+  background-color: red; }
+
+/* CSS Document */
+nav {
+  padding: 0px 10px !important;
+  background-color: #1391BE !important; }
+  nav li {
+    margin: 0;
+    padding: 10px 20px; }
+    nav li:hover {
+      background-color: #1391BE; }
+    nav li a {
+      padding: 0 !important;
+      color: #ffffff !important;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
+
+.onepage-pagination {
+  height: auto;
+  width: 20px;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translate(0%, -50%); }
+  .onepage-pagination li {
+    width: 20px;
+    height: 20px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .onepage-pagination li.whitePoint:hover a {
+      background-color: #FFFFFF; }
+    .onepage-pagination li.whitePoint a {
+      background-color: rgba(1, 1, 1, 0.5); }
+      .onepage-pagination li.whitePoint a.active {
+        background-color: #FFFFFF; }
+    .onepage-pagination li.whitePoint span {
+      background-color: #FFFFFF;
+      color: #1391BE; }
+    .onepage-pagination li:hover a {
+      width: 15px;
+      height: 15px;
+      background-color: #1391BE; }
+    .onepage-pagination li:hover span {
+      opacity: 1; }
+    .onepage-pagination li a {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: inline-block !important;
+      border-radius: 20px;
+      transition: all 0.1s ease-in;
+      padding: 0px !important; }
+      .onepage-pagination li a.active {
+        width: 15px;
+        height: 15px;
+        background-color: #1391BE; }
+    .onepage-pagination li span {
+      padding: 5px 10px;
+      border-radius: 10px 0px 0px 0px;
+      background-color: #1391BE;
+      color: #FFFFFF;
+      position: absolute;
+      right: 25px;
+      white-space: nowrap;
+      font-weight: 300;
+      opacity: 0;
+      transition: all 0.3s ease-in; }
+
+/* CSS Document */
+.blobs {
+  filter: url("#goo");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+@keyframes blob-left-top-anim {
+  0% {
+    transform: scale(1.1) translate(0, 0); }
+  33% {
+    transform: scale(0.9) translate(-65px, 0); }
+  62% {
+    transform: scale(0.7) translate(-65px, -65px); }
+  94% {
+    transform: scale(1.1) translate(0, 0); } }
+@keyframes blob-right-top-anim {
+  0% {
+    transform: scale(1.1) translate(0, 0); }
+  33% {
+    transform: scale(0.9) translate(65px, 0); }
+  64% {
+    transform: scale(0.7) translate(65px, -65px); }
+  96% {
+    transform: scale(1.1) translate(0, 0); } }
+@keyframes blob-left-bottom-anim {
+  0% {
+    transform: scale(1.1) translate(0, 0); }
+  33% {
+    transform: scale(0.9) translate(-65px, 0); }
+  66% {
+    transform: scale(0.7) translate(-65px, 65px); }
+  98% {
+    transform: scale(1.1) translate(0, 0); } }
+@keyframes blob-right-bottom-anim {
+  0% {
+    transform: scale(1.1) translate(0, 0); }
+  33% {
+    transform: scale(0.9) translate(65px, 0); }
+  68% {
+    transform: scale(0.7) translate(65px, 65px); }
+  100% {
+    transform: scale(1.1) translate(0, 0); } }
+.blob {
+  position: absolute;
+  background: #e97b7a;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 4s infinite; }
+  .blob:nth-child(2) {
+    animation-name: blob-right-top-anim; }
+  .blob:nth-child(3) {
+    animation-name: blob-left-bottom-anim; }
+  .blob:nth-child(4) {
+    animation-name: blob-right-bottom-anim; }

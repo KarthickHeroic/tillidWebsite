@@ -1,0 +1,20 @@
+<svg id="Bg" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect opacity="0.3" id="Rectangle_1" data-name="Rectangle 1" width="144" height="144" fill="#eff5f8"/>
+  <rect opacity="0.3" id="Rectangle_11" data-name="Rectangle 11" width="144" height="144" transform="translate(1920 1080) rotate(180)" fill="#eff5f8"/>
+  <rect opacity="0.3" id="Rectangle_3" data-name="Rectangle 3" width="144" height="144" transform="translate(144 144)" fill="#fafdff"/>
+  <rect opacity="0.3" id="Rectangle_13" data-name="Rectangle 13" width="144" height="144" transform="translate(1776 936) rotate(180)" fill="#fafdff"/>
+  <rect opacity="0.3" id="Rectangle_4" data-name="Rectangle 4" width="144" height="144" transform="translate(288 288)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_16" data-name="Rectangle 16" width="144" height="144" transform="translate(1632 792) rotate(180)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_5" data-name="Rectangle 5" width="144" height="144" transform="translate(288 1)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_12" data-name="Rectangle 12" width="144" height="144" transform="translate(1632 1079) rotate(180)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_6" data-name="Rectangle 6" width="144" height="144" transform="translate(432 1)" fill="#f2f6f8"/>
+  <rect opacity="0.3" id="Rectangle_14" data-name="Rectangle 14" width="144" height="144" transform="translate(1488 1079) rotate(180)" fill="#f2f6f8"/>
+  <rect opacity="0.3" id="Rectangle_10" data-name="Rectangle 10" width="144" height="144" transform="translate(432 432)" fill="#fafdff"/>
+  <rect opacity="0.3" id="Rectangle_19" data-name="Rectangle 19" width="144" height="144" transform="translate(1488 648) rotate(180)" fill="#fafdff"/>
+  <rect opacity="0.3" id="Rectangle_9" data-name="Rectangle 9" width="144" height="144" transform="translate(0 288)" fill="#f2f6f8"/>
+  <rect opacity="0.3" id="Rectangle_17" data-name="Rectangle 17" width="144" height="144" transform="translate(1920 792) rotate(180)" fill="#f2f6f8"/>
+  <rect opacity="0.3" id="Rectangle_8" data-name="Rectangle 8" width="144" height="144" transform="translate(432 145)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_15" data-name="Rectangle 15" width="144" height="144" transform="translate(1488 935) rotate(180)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_7" data-name="Rectangle 7" width="144" height="144" transform="translate(576 1)" fill="#f7fafc"/>
+  <rect opacity="0.3" id="Rectangle_18" data-name="Rectangle 18" width="144" height="144" transform="translate(1344 1079) rotate(180)" fill="#f7fafc"/>
+</svg>

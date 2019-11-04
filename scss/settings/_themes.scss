@@ -1,0 +1,22 @@
+
+
+$mainColor:#1391BE; 
+$bgColor:#d2e0e5;
+$fontColor:#707070;
+$fontColor2:#4E4E4E;
+$gradientStart:#1391BE;
+$gradientEnd:#BBF3A3;
+
+$blueColor:$mainColor;
+
+$white:#FFFFFF;
+$black:#000000;
+
+$imgUrl:'../images/tillid.svg';
+body, html{
+	height: 100%;
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+}

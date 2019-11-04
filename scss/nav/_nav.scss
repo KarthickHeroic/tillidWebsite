@@ -1,0 +1,104 @@
+/* CSS Document */
+nav{
+ 	padding: 0px 10px!important; 
+	//  @include linear-gradient(-10, #cccccc, #333333);
+	background-color: #1391BE!important;
+	li{
+		margin: 0;
+		padding: 10px 20px;
+		&:hover{
+			background-color: $mainColor;
+		}		
+		a{
+			padding: 0!important;
+			color: #ffffff!important;
+			@include single-text-shadow(1px, 1px, 1px, rgba(0,0,0,.16));
+		}
+		
+	}
+}
+
+.onepage-pagination{
+	height: auto;
+	width: 20px;		
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	transform: translate(0%, -50%);
+
+	
+		li{
+			width: 20px;
+			height: 20px;
+			margin: 0px auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			&.whitePoint
+			{
+				&:hover{
+					a{
+						background-color: $white;
+					}
+				}
+				a{
+					background-color: rgba(1,1,1,0.5);
+					&.active
+				{
+				
+					background-color: $white;
+				}	
+				}
+				span{
+					background-color: $white;
+					color:$mainColor;
+				}
+					
+				
+			}
+			
+				&:hover{
+					a{
+					width: 15px;
+					height: 15px;
+					background-color: $mainColor;
+					}
+					
+					span{
+						opacity: 1;						
+					}
+			}
+			
+			a{				
+				width: 10px;
+				height: 10px;
+				background-color: rgba(0,0,0,0.3);
+				display: inline-block!important;
+				border-radius: 20px;
+				transition: all 0.1s ease-in;	
+				padding: 0px!important;
+				&.active
+				{
+					width: 15px;
+					height: 15px;
+					background-color: $mainColor;
+				}			
+			}
+			span{
+				padding: 5px 10px;
+				border-radius: 10px 0px 0px 0px;
+				background-color: $mainColor;
+				color:$white;
+				position: absolute;
+				right: 25px;
+				white-space: nowrap;
+				font-weight: 300;
+				opacity:0;
+				transition: all 0.3s ease-in;
+				
+			}
+		}
+		
+	
+}

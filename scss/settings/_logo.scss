@@ -1,0 +1,12 @@
+.logo
+{
+	 @include app-logo($imgUrl, 80, 80);
+	 height: 100px;
+	 width: 100px;
+position: fixed;
+top: 50%;
+left: 0;
+transform: translate(0%, -50%);
+	z-index: 2;
+	
+}

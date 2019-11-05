@@ -11,7 +11,11 @@
 @import 'settings/themes';
 @import 'settings/logo';
 @import 'settings/background';
+@import 'settings/custom';
 @import "nav/nav";
 @import "nav/anim";
+
+@import "pages/home";
+@import "pages/aboutus";
 
 

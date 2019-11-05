@@ -1,28 +1,32 @@
-<!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-		  <link href="scss/css/screen.css" rel="stylesheet">
-</head>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  </head>
+  <body>
 
-<body>
-	<div class="blobs">
-  <div class="blob">4</div>
-  <div class="blob">3</div>
-  <div class="blob">2</div>
-  <div class="blob">1</div>
-</div>
+  <div class="your">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+  </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-      <feBlend in="SourceGraphic" in2="goo" />
-    </filter>
-  </defs>
-</svg>
-    <script src="scss/js/jquery-3.3.1.min.js"></script>
-</body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your').slick({
+        infinite: false,
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+		  arrows:true
+      });
+    });
+  </script>
+
+  </body>
 </html>
+		

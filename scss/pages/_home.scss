@@ -1,0 +1,48 @@
+#home{
+	.center
+	{
+	  width: 60%;
+	  position:absolute;
+	  top:50%;
+	  left:50%;
+	  transform:translate(-50%,-50%);
+		.head{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			
+			h1{
+			font-size: 3.5em;
+    		font-weight: 700;
+    		font-family: 'Roboto Slab', sans-serif;
+   			text-transform: uppercase;			
+			}
+			.gradientBar
+			{
+				height: 36px;
+				margin-left: 10px;				
+				flex-grow:8;
+				 @include linear-gradient(10, $gradientStart, $gradientEnd);
+			}
+		}
+		p{
+			margin-top: 5px;
+			font-size: 1.5em;
+		}
+		.slick-dots {
+			width: auto!important;
+			bottom: -35px;
+			li {
+				
+				&:first-child{
+					margin-left: 0!important;
+				}
+			button::before{
+			content: url("../images/inactive.svg")!important;
+				}
+		}
+		
+		}
+	}
+	
+}

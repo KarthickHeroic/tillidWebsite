@@ -53,6 +53,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .layout {
   table-layout: inherit; }
 
+/* CSS Document */
+/*   @include text-gradient(left, $c-primary, $c-secondary);*/
 body, html {
   height: 100%;
   width: 100%;
@@ -67,10 +69,23 @@ body, html {
   height: 100px;
   width: 100px;
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 0;
   transform: translate(0%, -50%);
   z-index: 2; }
+
+.logoStrip {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 50px;
+  z-index: 1029;
+  top: 30px;
+  display: flex;
+  align-items: center; }
+  .logoStrip img {
+    height: 35px;
+    object-fit: contain;
+    margin-left: 5px; }
 
 /* CSS Document */
 .bodybg {
@@ -78,23 +93,25 @@ body, html {
   height: 100%;
   width: 100%;
   background-image: url("../images/bg.svg");
-  z-index: 1000;
+  z-index: 1;
   position: fixed; }
 
 section {
   background-size: contain;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  padding-top: 50px; }
 
 #home {
-  background-color: #d2e0e5; }
+  background-color: rgba(210, 224, 229, 0.1); }
 
 #technologies {
-  background-color: #1391BE; }
+  background-color: rgba(19, 145, 190, 0.7); }
 
 #whoweare {
   background-color: red; }
 
+/* CSS Document */
 /* CSS Document */
 nav {
   padding: 0px 10px !important;
@@ -229,3 +246,78 @@ nav {
     animation-name: blob-left-bottom-anim; }
   .blob:nth-child(4) {
     animation-name: blob-right-bottom-anim; }
+
+#home .center {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #home .center .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    #home .center .head h1 {
+      font-size: 3.5em;
+      font-weight: 700;
+      font-family: 'Roboto Slab', sans-serif;
+      text-transform: uppercase; }
+    #home .center .head .gradientBar {
+      height: 36px;
+      margin-left: 10px;
+      flex-grow: 8;
+      background: #1391BE;
+      /* Old browsers */
+      background: -moz-linear-gradient(10, #1391BE 0%, #BBF3A3 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #1391BE), color-stop(100%, #BBF3A3));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(45deg, #1391BE 0%, #BBF3A3 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(45deg, #1391BE 0%, #BBF3A3 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(45deg, #1391BE 0%, #BBF3A3 100%);
+      /* IE10+ */
+      background: linear-gradient(45deg, #1391BE 0%, #BBF3A3 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1391BE', endColorstr='#BBF3A3',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+  #home .center p {
+    margin-top: 5px;
+    font-size: 1.5em; }
+  #home .center .slick-dots {
+    width: auto !important;
+    bottom: -35px; }
+    #home .center .slick-dots li:first-child {
+      margin-left: 0 !important; }
+    #home .center .slick-dots li button::before {
+      content: url("../images/inactive.svg") !important; }
+
+#wheweare, #whatwedo {
+  margin: 130px 0 0 0; }
+  #wheweare h1, #whatwedo h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    font-family: "Roboto slab";
+    display: inline-block;
+    background: -webkit-linear-gradient(-45deg, #1391BE, #7DB95A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  #wheweare p, #whatwedo p {
+    font-size: 1.5em;
+    margin: 15px 0px 15px 0px;
+    line-height: 35px; }
+
+#whatwedo #flexContainer {
+  display: flex;
+  flex-direction: row; }
+  #whatwedo #flexContainer p {
+    font-size: 1.6em;
+    margin: 15px 0px 15px 0px;
+    line-height: 40px; }
+    #whatwedo #flexContainer p:first-child {
+      font-size: 3.5rem;
+      line-height: 60px;
+      text-transform: uppercase; }

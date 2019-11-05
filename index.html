@@ -1,112 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-<link href="css/screen.css" rel="stylesheet">
-<link href="css/onepage-scroll.css" rel="stylesheet">
-<link href="css/slick-theme.css" rel="stylesheet">
-<link href="css/slick.css" rel="stylesheet">	
-<script src="js/jquery-3.3.1.min.js"></script> 
-<script src="js/jquery.onepage-scroll.js" type="text/javascript"></script>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet">
+	<link href="css/onepage-scroll.css" rel="stylesheet">
+	<link href="css/slick-theme.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery.multiscroll.css" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.onepage-scroll.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			   $('#multiscroll').multiscroll({
+				   sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+				   anchors: ['first', 'second', 'third'],
+				   menu: '#menu',
+				   easing: 'easeOutBack'
+			   });
+		   });
+	   </script>
 </head>
-<body>
-<div class="bodybg"></div>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark"> <a class="navbar-brand" href="#"> <img src="images/ic_home_24px.svg" alt="Home"> </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item"> <a class="nav-link" href="#">Core Technologies</a> </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Consulting Services </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Core Technologies</a> <a class="dropdown-item" href="#">Consulting Services</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a> </div>
-      </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Industries</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Our Insights</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="#">Company</a> </li>
-    </ul>
-  </div>
-</nav>
-<div class="logo"></div>
-<div id="tillid">
-  <section id="home" data-title="Home">
-	<div class="vertical-center-4 slider">
-    <div>
-      <img src="http://placehold.it/350x100?text=1">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=2">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=3">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=4">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=5">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=6">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=7">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=8">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=9">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x100?text=10">
-    </div>
-  </div>
-	</section>
-  <section id="technologies" data-title="What We Do?"> </section>
-  <section id="whoweare" data-title="Who we Are"> </section>
-</div>
 
+<body class="bodybg">
+	<!--<div class="bodybg"></div>-->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark"> <a class="navbar-brand" href="#"> <img
+				src="images/ic_home_24px.svg" alt="Home"> </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+				class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"> <a class="nav-link" href="#">Core Technologies</a> </li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Consulting
+						Services </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Core
+							Technologies</a> <a class="dropdown-item" href="#">Consulting Services</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item"> <a class="nav-link" href="#">Industries</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Our Insights</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#">Company</a> </li>
+			</ul>
+		</div>
+	</nav>
+	<div class="logo"></div>
+	<div class="logoStrip fixed-top"><img src="images/logoStrip.svg" alt="Tillid Software Solutions Pvt Ltd" /> </div>
+	<div id="tillid">
+		<section id="home" data-title="Home">
+			<div class="center">
+				<div class="slider">
+					<div class="slide1">
+						<div class="head">
+							<h1>Expertise</h1>
+							<div class="gradientBar"></div>
+						</div>
+						<p>Our team brings best in the industry practices &amp; process with simple technology
+							solutions to deliver on our client's business needs</p>
+					</div>
+					<div class="slide1">
+						<div class="head">
+							<h1>DELIVERY</h1>
+							<div class="gradientBar"></div>
+						</div>
+						<p>With over 16 years of industry experience and proven development methodology we deliver
+							consistent results that improves our client's ROI</p>
+					</div>
+					<div class="slide1">
+						<div class="head">
+							<h1>WORK IS FUN</h1>
+							<div class="gradientBar"></div>
+						</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+						<p>We believe in smart work than hard work. Want to work with best team and have fun in work? We
+							are always looking for right talent to join our team</p>
+					</div>
+				</div>
+			</div>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.3.1.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-	
+		</section>
+		<section id="wheweare" data-title="Who we Are">
+			<div class="container">
+				<h1>Who We Are?</h1>
+				<p>
+					Our world is digitalizing. An Airplane company need to collaborate to make its product to fly sky
+					High. A High Speed train company need to have control over a millions of Spares working inside it to
+					keep it moving at desired speed. An IT industry need to have cross culture managing system in place
+					to keep their projects developing in Rapid speed. </p>
+				<p>
+					At Tillid we develop the state of Art IT solutions to the companies competing their IT services to
+					the Global stage. Our commitment to the global companies is to deliver Quality product/services by
+					leveraging the IT and reducing the capex. We’re proud to be recognized as a Microsoft Partner. With
+					more than a decade of rich experience and our team of 50+ highly-skilled technology consultants, our
+					software development company has built a legacy of innovative solutions and partnerships by creating
+					smart, cutting-edge solutions for an ever-changing global marketplace.</p>
+			</div>
+
+		</section>
+		<section id="whatwedo" data-title="What We Do?">
+			<div class="container">
+				<h1>Who We Are?</h1>
+				<div id="flexContainer">
+					<p>
+						We are what we repeatedly do. Excellence, then, is not an act, but a habit </p>
+					<p class="ml-5">
+						With creativity, we adapt to every challenge by transforming core business, developing new
+						opportunities, and integrating the two into the future for a wise pivot. Tillid consultancy
+						helps people to put creative ideas to life in unexpected ways. The customers are able to
+						transform from market participants to market leaders through change and creativity. </p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="multiscroll">
+				<div class="ms-left">
+					<div class="ms-section">Some section</div>
+					<div class="ms-section">Some section</div>
+					<div class="ms-section">Some section</div>
+				</div>
+				<div class="ms-right">
+					<div class="ms-section">Some section</div>
+					<div class="ms-section">Some section</div>
+					<div class="ms-section">Some section</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.multiscroll.min.js"></script>
+
 	<script>
-	 $(document).ready(function(){ 
-          $("#tillid").onepage_scroll({
-		   sectionContainer: "section",     
-		   easing: "ease-in-out",  
-		   animationTime: 500,             
-		   pagination: true,                
-		   updateURL: false,               
-		   beforeMove: function(index) {},  
-		   afterMove: function(index) {},  
-		   loop: false,                     
-		   keyboard: true,                 
-		   responsiveFallback: false,    
-		   direction: "vertical",
-			whitePage:[2,3]
-		  });
-        }); 
+		$(document).ready(function () {
+			$("#tillid").onepage_scroll({
+				sectionContainer: "section",
+				easing: "ease-in-out",
+				animationTime: 500,
+				pagination: true,
+				updateURL: false,
+				beforeMove: function (index) { },
+				afterMove: function (index) { },
+				loop: false,
+				keyboard: true,
+				responsiveFallback: false,
+				direction: "vertical",
+				whitePage: []
+			});
+		});
+		$(".slider").slick({
+
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			fade: true,
+			cssEase: 'ease-in',
+			speed: 500,
+		});
 	
-	 $(".vertical-center-4").slick({
-        dots: true,
-        vertical: true,
-        centerMode: true,
-        slidesToShow: 4,
-        slidesToScroll: 2
-      });
-	  </script> 
+	</script>
 </body>
 </html>

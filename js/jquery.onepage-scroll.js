@@ -124,9 +124,12 @@
     }
 
     $.fn.moveDown = function() {
+		
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
+		
+		
       next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
       if(next.length < 1) {
         if (settings.loop == true) {
@@ -155,9 +158,26 @@
         history.pushState( {}, document.title, href );
       }
       el.transformPage(settings, pos, next.data("index"));
+		
+		
+		var inx = index+1
+		
+				  for(i=0; i<settings.whitePage.length;i++)
+				  {
+					
+					  if(settings.whitePage[i]==inx)
+						  {							 
+							  $(".onepage-pagination li a" ).parent().addClass("whitePoint");
+							  return false;
+						  }
+					  else{
+						   $(".onepage-pagination li a" ).parent().removeClass("whitePoint");
+					  }
+				  }	
     }
 
     $.fn.moveUp = function() {
+		
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
@@ -189,12 +209,29 @@
         history.pushState( {}, document.title, href );
       }
       el.transformPage(settings, pos, next.data("index"));
+		console.log(index)
+			var inx = index-1
+		
+				  for(i=0; i<settings.whitePage.length;i++)
+				  {
+					
+					  if(settings.whitePage[i]==inx)
+						  {							 
+							  $(".onepage-pagination li a" ).parent().addClass("whitePoint");
+							  return false;
+						  }
+					  else{
+						   $(".onepage-pagination li a" ).parent().removeClass("whitePoint");
+					  }
+				  }	
     }
 
     $.fn.moveTo = function(page_index) {
+		
       current = $(settings.sectionContainer + ".active")
       next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
       if(next.length > 0) {
+		 
         if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
         current.removeClass("active")
         next.addClass("active")
@@ -367,6 +404,8 @@
       $("body").addClass("viewing-page-1")
       if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active");
     }
+	  
+	  
 
     if(settings.pagination == true)  {
       $(".onepage-pagination li a").click(function (){
@@ -394,6 +433,7 @@
       event.preventDefault();
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       if(!$("body").hasClass("disabled-onepage-scroll")) init_scroll(event, delta);
+		
     });
 
 

@@ -1,32 +1,91 @@
-<html>
-  <head>
-  <title>My Now Amazing Webpage</title>
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
 
-  <div class="your">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
-  </div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your').slick({
-        infinite: false,
-  		slidesToShow: 1,
-  		slidesToScroll: 1,
-		  arrows:true
-      });
-    });
-  </script>
 
-  </body>
-</html>
+
+</head>
+
+<body>
+
+	<div id="tillid" class="height100">
+		<section id="technologies">
+			<div class="container-fluid height100">
+        <div class="row height100">
+          <div class="col-md-6 height100 box animatable moveDown">test</div>
+          <div class="col-md-6 height100 box1 animatable moveUp">test</div>          
+        </div>
+        <div class="row height100">
+            <div class="col-md-6 height100 box animatable moveDown">test</div>
+            <div class="col-md-6 height100 box1 animatable moveUp">test</div>          
+          </div>
+          <div class="row height100">
+              <div class="col-md-6 height100 box animatable moveDown">test</div>
+              <div class="col-md-6 height100 box1 animatable moveUp">test</div>          
+            </div>
+            <div class="row height100">
+                <div class="col-md-6 height100 box animatable moveDown">test</div>
+                <div class="col-md-6 height100 box1 animatable moveUp">test</div>          
+              </div>        
+			</div>
 		
+			
+		</section>
+	</div>
+
+
+
+		<script>
+
+		$(document).ready(function () {
+
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+		$animatables.each(function(i) {      
+       var $animatable = $(this);
+			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+console.log(offset);
+console.log($animatable.offset().top + $animatable.height()-20);
+        $animatable.removeClass('animatable').addClass('animated');
+			}
+    });
+
+	};
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+	$(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+
+    });
+
+
+
+  </script>
+  
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+</body>
+</html>

@@ -209,8 +209,7 @@
         history.pushState( {}, document.title, href );
       }
       el.transformPage(settings, pos, next.data("index"));
-		console.log(index)
-			var inx = index-1
+					var inx = index-1
 		
 				  for(i=0; i<settings.whitePage.length;i++)
 				  {

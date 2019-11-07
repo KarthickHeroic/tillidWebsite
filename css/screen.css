@@ -100,20 +100,29 @@ section {
   background-size: contain;
   height: 100%;
   width: 100%;
-  padding-top: 50px; }
+  padding-top: 80px; }
 
 #home {
   background-color: rgba(210, 224, 229, 0.1); }
 
 #technologies {
-  background-color: rgba(210, 224, 229, 0.7); }
+  background-image: url("../images/bg_black.svg");
+  background-size: cover; }
 
-#whoweare {
-  background-color: red; }
+#services {
+  background-image: url("../images/69284745_l.jpg");
+  background-size: cover; }
+
+#contact {
+  background-image: url("../images/bg_black.svg");
+  background-size: cover; }
 
 /* CSS Document */
 .height100 {
   height: 100%; }
+
+.height50 {
+  height: 50%; }
 
 .animatable {
   /* initially hide animatable objects */
@@ -710,14 +719,135 @@ nav {
       line-height: 60px;
       text-transform: uppercase; }
 
-#technologies .box {
-  background-color: red; }
-#technologies .box1 {
-  background-color: blue; }
-#technologies .center {
-  width: 60%;
+#technologies {
+  text-align: center;
+  color: #FFFFFF; }
+  #technologies .title {
+    margin-top: 50px;
+    font-family: 'Roboto Slab',sans-serif;
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(-45deg, #1391BE, #7DB95A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 65px; }
+  #technologies .borderRight {
+    border-right: 1px solid rgba(255, 255, 255, 0.1); }
+  #technologies .content, #technologies .opensource {
+    display: flex;
+    margin-top: 6%;
+    align-items: center;
+    flex-direction: column; }
+    #technologies .content img, #technologies .opensource img {
+      width: 60%;
+      height: 100px;
+      margin-bottom: 50px; }
+    #technologies .content h1, #technologies .opensource h1 {
+      font-size: 1.6rem;
+      font-family: 'roboto slab';
+      white-space: nowrap;
+      margin-bottom: 10px; }
+    #technologies .content ul li, #technologies .opensource ul li {
+      text-align: center;
+      list-style: none;
+      font-size: 1.2rem;
+      line-height: 41px;
+      color: rgba(255, 255, 255, 0.5); }
+  #technologies .opensource {
+    justify-content: center;
+    margin: 0; }
+    #technologies .opensource img {
+      width: 85%; }
+
+#services .overlay {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(8, 13, 23, 0.9); }
+#services .title {
+  margin-top: 20%;
+  font-family: 'Roboto Slab',sans-serif;
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(-45deg, #1391BE, #7DB95A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-align: left;
+  display: inline-block; }
+#services p {
+  margin-top: 15px;
+  color: #FFFFFF;
+  line-height: 30px;
+  font-size: 1.3rem;
+  padding-right: 35px; }
+#services .serviceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #services .serviceList .boxContainer {
+    padding: 10px; }
+    #services .serviceList .boxContainer .box {
+      padding: 10px; }
+      #services .serviceList .boxContainer .box img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px; }
+      #services .serviceList .boxContainer .box h1 {
+        font-size: 1.6rem;
+        font-family: 'Roboto Slab',sans-serif;
+        font-weight: 400;
+        color: #46ceff;
+        margin-bottom: 10px; }
+      #services .serviceList .boxContainer .box .content {
+        color: #FFFFFF;
+        font-size: 1.1rem;
+        line-height: 20px; }
+
+#contact .bar {
+  position: absolute;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  height: 60px; }
+  height: 50%;
+  width: 1px;
+  background-color: #FFFFFF; }
+#contact .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #FFFFFF; }
+  #contact .left li {
+    display: flex;
+    list-style: none;
+    align-items: center; }
+    #contact .left li h1 {
+      font-size: 1.6rem;
+      line-height: 50px;
+      font-weight: 400; }
+    #contact .left li p {
+      font-size: 1.1rem;
+      line-height: 30px; }
+    #contact .left li ul {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px; }
+      #contact .left li ul li {
+        margin-right: 15px; }
+        #contact .left li ul li img {
+          width: 20px;
+          height: 20px; }
+#contact .right {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #contact .right h1 {
+    font-family: 'roboto slab', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 2px; }

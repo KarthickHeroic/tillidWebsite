@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="php" transform="translate(-201 -318)">
+    <g id="Group_103" data-name="Group 103" transform="translate(0 -54)">
+      <rect id="Rectangle_43" data-name="Rectangle 43" width="65" height="65" transform="translate(201 372)" fill="#8993be"/>
+    </g>
+    <g id="php-1" transform="translate(207.65 337.434)">
+      <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="25.35" cy="13.196" rx="25.35" ry="13.196" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_88" data-name="Path 88" d="M35.945,34.368,38.723,20.3h6.424c2.778.174,4.167,1.563,4.167,3.994a6.144,6.144,0,0,1-6.251,6.424H39.939l-.695,3.646Zm4.688-6.251.868-5.209h2.257c1.215,0,2.083.521,2.083,1.563-.173,2.952-1.563,3.473-3.125,3.646H40.633Zm8.036,2.6,2.778-14.064h3.3L54.051,20.3h3.125c2.778.174,3.82,1.563,3.473,3.3l-1.215,7.119H55.961L57.177,24.3c.173-.868.173-1.389-1.042-1.389h-2.6l-1.563,7.813Zm10.543,3.646L61.99,20.3h6.424c2.778.174,4.167,1.563,4.167,3.994a6.144,6.144,0,0,1-6.251,6.424H63.2l-.695,3.646ZM63.9,28.118l.868-5.209h2.257c1.215,0,2.083.521,2.083,1.563-.173,2.952-1.563,3.473-3.125,3.646H63.9Z" transform="translate(-28.826 -13.359)" fill="#232531" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

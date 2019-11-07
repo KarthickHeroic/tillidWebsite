@@ -12,15 +12,22 @@ section
 	background-size: contain;
 	height: 100%;
 	width: 100%;	
-	padding-top:50px;
+	padding-top:80px;
 	
 }
 #home{
 background-color: rgba($bgColor,0.1);
 }
+
 #technologies{
-background-color:rgba($bgColor,0.7);
+	background-image: url("../images/bg_black.svg");	
+	background-size: cover;
 }
-#whoweare{
-background-color: red;	
+#services{
+	background-image: url("../images/69284745_l.jpg");	
+	background-size: cover;	
+}
+#contact{
+	background-image: url("../images/bg_black.svg");	
+	background-size: cover;
 }

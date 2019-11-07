@@ -1,23 +1,52 @@
-#technologies{
-
-	.box{
+#technologies {
+	text-align: center;
+	.title
+    {
+        margin-top: 50px;
+        font-family: 'Roboto Slab',sans-serif;
+		font-size: 3.5rem;		
+		@include text-gradient($gradientStart, $gradientEndText);
+		font-weight: 600;
+		display: inline-block;
+		line-height: 65px;
+    }
+	color:$white;
+	.borderRight{
+		border-right: 1px solid rgba($white,0.1);
+	}
+	.content, .opensource{
+		display: flex;
 		
-		background-color: red;
+		margin-top: 6%;
+		align-items: center;
+		flex-direction: column;
+		img{
+			width: 60%;
+			height: 100px;
+			margin-bottom: 50px;
+		}
+		h1{
+			font-size: 1.6rem;
+			font-family: 'roboto slab';
+			white-space: nowrap;
+			margin-bottom: 10px;
+		}
+		ul li{
+			text-align: center;
+			list-style: none;
+			font-size: 1.2rem;
+			line-height: 41px;
+			color:rgba($white,0.5);
+		}
 	}
-	.box1{
-	
-		background-color: blue;
-	}
-
-	.center
+	.opensource
 	{
-	  width: 60%;
-	  position:absolute;
-	  top:50%;
-	  left:50%;
-	  transform:translate(-50%,-50%);
-	  height: 60px;
-	 
-	
-	}
+		justify-content: center;
+		margin: 0;
+		img{
+			width: 85%;
+			
+		}
+	} 
+
 }

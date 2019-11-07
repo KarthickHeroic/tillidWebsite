@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url('../images/ajax-loader.gif?1572935827') center center no-repeat; }
+  background: #fff url('../images/ajax-loader.gif?1573055065') center center no-repeat; }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url('../fonts/slick.eot?1572876530');
-  src: url('../fonts/slick.eot?&1572876530#iefix') format("embedded-opentype"), url('../fonts/slick.woff?1572876530') format("woff"), url('../fonts/slick.ttf?1572876530') format("truetype"), url('../fonts/slick.svg?1572876530#slick') format("svg");
+  src: url('../fonts/slick.eot?1573055065');
+  src: url('../fonts/slick.eot?&1573055065#iefix') format("embedded-opentype"), url('../fonts/slick.woff?1573055065') format("woff"), url('../fonts/slick.ttf?1573055065') format("truetype"), url('../fonts/slick.svg?1573055065#slick') format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
